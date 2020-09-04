@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" type="module"></script>
+</head>
+
+<body>
+  <nav>
+
+    <h1 id="heading">ROLL DICE GAME</h1>
+  </nav>
+
+  <hr>
+  <section id="player">
+    <article>
+      <h2 id="player-1">player-1</h2>
+      <br />
+      <img src="p1.png" class="lg" height="60px" width="80px">
+      <br>
+      <img id="ig" src="./images/dice-1.png" alt="" height="160px" width="180px" />
+      <br />
+      <br />
+      <h1 id="score">score-0</h1>
+      <button id="btn">ROLL PLAYER-1</button>
+    </article>
+
+    <article class="button">
+
+
+
+      <img src="./images/timer.png" alt="" width="50px" height="50px" />
+      <h3 id="timer" onclick="timer();">00:00</h3>
+      <div id="container">
+        <div id="id1" class="cl"><img src="p1.png" id="img1" alt="" height="50px" width="50px"><img src="p2.png"
+            id="img2" alt="" height="50px" width="50px"></div>
+        <div id="id2" class="cl"></div>
+        <div id="id3" class="cl"></div>
+        <div id="id4" class="cl"></div>
+        <div id="id5" class="cl"></div>
+        <div id="id6" class="cl"></div>
+        <div id="id7" class="cl"></div>
+        <div id="id8" class="cl"></div>
+        <div id="id9" class="cl"></div>
+        <div id="id10" class="cl"></div>
+        <div id="id11" class="cl"></div>
+        <div id="id12" class="cl"></div>
+        <div id="id13" class="cl"></div>
+        <div id="id14" class="cl"></div>
+        <div id="id15" class="cl"></div>
+        <div id="id16" class="cl"></div>
+        <div id="id17" class="cl"></div>
+        <div id="id18" class="cl"></div>
+        <div id="id19" class="cl"></div>
+        <div id="id20" class="cl"></div>
+        <div id="id21" class="cl"></div>
+        <div id="id22" class="cl"></div>
+        <div id="id23" class="cl"></div>
+        <div id="id24" class="cl"></div>
+        <div id="id25" class="cl"></div>
+        <div id="id25" class="cl"></div>
+        <div id="id27" class="cl"></div>
+        <div id="id28" class="cl"></div>
+        <div id="id29" class="cl"></div>
+        <div id="id30" class="cl"></div>
+        <div id="id31" class="cl"></div>
+        <div id="id32" class="cl"></div>
+        <div id="id33" class="cl"></div>
+        <div id="id34" class="cl"></div>
+        <div id="id35" class="cl"></div>
+        <div id="id36" class="cl"></div>
+        <div id="id37" class="cl"></div>
+        <div id="id38" class="cl"></div>
+        <div id="id39" class="cl"></div>
+        <div id="id40" class="cl"></div>
+        <div id="id41" class="cl"></div>
+        <div id="id42" class="cl"></div>
+        <div id="id43" class="cl"></div>
+        <div id="id44" class="cl"></div>
+        <div id="id45" class="cl"></div>
+        <div id="id46" class="cl"></div>
+        <div id="id47" class="cl"></div>
+        <div id="id48" class="cl"></div>
+        <div id="id49" class="cl"></div>
+        <div id="id50" class="cl">END</div>
+
+      </div>
+      <button id="start-btn">START GAME</button>
+      <button id="popup">instructions</button>
+      <!-- <a href="instruction.html" id="instructions">Instructions</a> -->
+    </article>
+
+    <article>
+      <h2 id="player-2">player-2</h2>
+      <br />
+      <img src="p2.png" class="lg" alt="" height="60px" width="80px">
+      <br>
+      <img id="ig2" src="./images/dice-1.png" alt="" height="160px" width="180px" />
+      <br />
+      <br />
+      <h1 id="score1">score-0</h1>
+      <button id="btn1">ROLL PLAYER-2</button>
+    </article>
+  </section>
+
+  <audio id="audio" src="daudio.mp3"></audio>
+  <audio id="wrong" src="negative.mp3"></audio>
+
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <button id="close-btn">Understood !!!</button>
+      <h1>INSTRUCTIONS</h1>
+      <p>
+        <ul>
+
+          <li>The Dice Game is based on a two-player.</li>
+          <li>When the players click on the roll button score gets updated.</li>
+          <li>Both players roll the dice and the player who gets the highest score will win the game.</li>
+          <li> All you have to do is roll the dice and try to reach score 50 faster than your opponent player.</li>
+          <li> You need to complete game within one minute. If you fail to complete within the time then the player
+            having
+            highest score will win the game</li>
+          <li>
+            <p id="red"> if player comes on red area then score will be reduced by 5</p>
+          </li>
+          <li>
+            <p id="green"> if player comes on green area then score will be increased by 5</p>
+          </li>
+        </ul>
+
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
